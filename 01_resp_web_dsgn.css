@@ -1,0 +1,106 @@
+
+ /* Google font*/
+ 
+ @import url('https://fonts.googleapis.com/css?family=Six+Caps');
+
+ @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+
+ .row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+
+ body { 
+  font-family: 'Montserrat', 'Arial', 'sans-serif',  'serif';
+  color: darkgrey;
+  background-color: white;
+  line-height: 1.6;
+  margin-left: 10rem;
+ } 
+
+
+ @media (min-width: 769px) {
+  body {
+    background-color: lightblue;
+    font-size: 18px;
+  }
+
+  .dv1 {
+    background-color: lightblue;
+    font-size: 18px;
+  }
+
+  .dv2 {
+    background-color: greenyellow;
+    font-size: 24px;
+    }
+  
+  .dv3 {
+    background-color: lightgoldenrodyellow;
+    font-size: 30px;
+    }
+
+
+  /* #small {display: none;}
+  #medium {display: none;}
+  #large {opacity: 1;} */
+}
+
+
+@media (min-width: 601px) and (max-width: 768px) {      
+  body {
+    background-color: greenyellow; 
+    font-size: 24px;
+  }
+
+  /* #small {display: none;}
+  #medium {opacity: 1;}
+  #large {opacity: 0;} */
+}
+
+
+@media (max-width: 600px) {    
+  body {
+    background-color: lightgoldenrodyellow;
+    font-size: 30px;
+  }
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  /* #small {opacity: 1;}
+  #medium {display: none;}
+  #large {display: none;} */
+}
+
